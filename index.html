@@ -14,18 +14,31 @@
 </head>
 <body class="bg-slate-900 text-slate-100 antialiased">
 
-    <!-- Navigation Bar -->
-    <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-sky-400">yassk<span class="text-slate-100">.dev</span></a>
-            <div class="space-x-6 text-sm font-medium">
-                <a href="#about" class="hover:text-sky-400 transition">About</a>
-                <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
-                <a href="#gallery" class="hover:text-sky-400 transition">Gallery</a>
-                <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
-            </div>
+    <!-- Navigation Bar (Responsive for Mobile & Desktop) -->
+<nav class="fixed top-0 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo / Name -->
+        <a href="#" class="text-lg sm:text-xl font-bold text-sky-400 tracking-wide">
+            YourName<span class="text-slate-100">.dev</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+            <a href="#about" class="hover:text-sky-400 transition">About</a>
+            <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+            <a href="#gallery" class="hover:text-sky-400 transition">Gallery</a>
+            <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
         </div>
-    </nav>
+
+        <!-- Mobile Menu Navigation Links (Horizontal Scroll / Compact alignment) -->
+        <div class="flex md:hidden space-x-3 text-xs font-semibold text-slate-300">
+            <a href="#about" class="px-2.5 py-1 bg-slate-800 rounded-lg hover:text-sky-400 transition">About</a>
+            <a href="#projects" class="px-2.5 py-1 bg-slate-800 rounded-lg hover:text-sky-400 transition">Projects</a>
+            <a href="#gallery" class="px-2.5 py-1 bg-slate-800 rounded-lg hover:text-sky-400 transition">Gallery</a>
+            <a href="#contact" class="px-2.5 py-1 bg-slate-800 rounded-lg hover:text-sky-400 transition">Contact</a>
+        </div>
+    </div>
+</nav>
 
    <!-- Hero Section with Side-by-Side Cover Image -->
 <section class="min-h-screen flex items-center justify-center pt-24 pb-12 px-6 max-w-6xl mx-auto">
@@ -61,23 +74,38 @@
 </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-6 bg-slate-800/50">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">About Me</h2>
-            <p class="text-slate-300 leading-relaxed mb-6">
-                I specialize in full-stack development, software automation, and creating clean user experiences. Experienced in building responsive designs, backend integration, and cross-platform tools.
-            </p>
-            
-            <!-- Skills Tags -->
-            <div class="flex flex-wrap gap-3 mt-4">
-                <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold text-sky-300">HTML5 / CSS3</span>
-                <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold text-sky-300">Tailwind CSS</span>
-                <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold text-sky-300">JavaScript</span>
-                <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold text-sky-300">Python</span>
-                <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold text-sky-300">Flutter</span>
+<section id="about" class="py-20 px-6 bg-slate-800/40 border-y border-slate-800">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-6 border-b border-slate-700/60 pb-3">About Me</h2>
+        
+        <!-- Bio Text -->
+        <p class="text-slate-300 leading-relaxed mb-6 text-base sm:text-lg">
+            Hi! I am a passionate Developer focused on creating practical software, desktop applications, and cross-platform mobile tools. I enjoy building efficient billing software, utility apps, and modern web interfaces using modern technologies.
+        </p>
+
+        <!-- What I Do Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700/40">
+                <h3 class="font-semibold text-sky-300 mb-1">📱 Mobile & App Development</h3>
+                <p class="text-xs text-slate-400">Building cross-platform apps using Flutter & Dart for Android and Desktop.</p>
+            </div>
+            <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700/40">
+                <h3 class="font-semibold text-sky-300 mb-1">💻 Software & Automation</h3>
+                <p class="text-xs text-slate-400">Creating desktop billing tools, Excel integrations, and Python automation scripts.</p>
             </div>
         </div>
-    </section>
+
+        <!-- Skills Tags -->
+        <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Skills & Technologies</h3>
+        <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">Flutter / Dart</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">Python</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">HTML5 / Tailwind CSS</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">JavaScript</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">Git & GitHub</span>
+        </div>
+    </div>
+</section>
 
     <!-- Featured Projects Section -->
     <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
