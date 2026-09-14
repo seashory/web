@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yassk Portfolio</title>
+    <title>yssk.dev - Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -12,234 +12,115 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 antialiased">
+<body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col justify-between">
 
-    <!-- Navigation Bar (Responsive for Mobile & Desktop) -->
-<nav class="fixed top-0 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <!-- Logo / Name -->
-        <a href="#" class="text-lg sm:text-xl font-bold text-sky-400 tracking-wide">
-            yassk<span class="text-slate-100">.dev</span>
-        </a>
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="text-xl font-bold text-sky-400 tracking-wide">
+                yssk<span class="text-slate-100">.dev</span>
+            </a>
 
-        <!-- Desktop Navigation Links -->
-        <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
-            <a href="#about" class="hover:text-sky-400 transition">About</a>
-            <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
-            <a href="#gallery" class="hover:text-sky-400 transition">Gallery</a>
-            <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+            <!-- Navigation Links -->
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-sky-400 transition">About</a>
+                <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+            </div>
         </div>
+    </nav>
 
-        <!-- Mobile Menu Navigation Links (Horizontal Scroll / Compact alignment) -->
-        <div class="flex md:hidden space-x-3 text-xs font-semibold text-slate-300">
-            <a href="#about" class="px-2.5 py-1 bg-slate-800 rounded-lg hover:text-sky-400 transition">About</a>
-            <a href="#projects" class="px-2.5 py-1 bg-slate-800 rounded-lg hover:text-sky-400 transition">Projects</a>
-            <a href="#gallery" class="px-2.5 py-1 bg-slate-800 rounded-lg hover:text-sky-400 transition">Gallery</a>
-            <a href="#contact" class="px-2.5 py-1 bg-slate-800 rounded-lg hover:text-sky-400 transition">Contact</a>
-        </div>
-    </div>
-</nav>
-
-   <!-- Hero Section with Side-by-Side Cover Image -->
-<section class="min-h-screen flex items-center justify-center pt-24 pb-12 px-6 max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <!-- Main Content Area -->
+    <main class="pt-24 pb-12">
         
-        <!-- Text Content -->
-        <div class="text-center md:text-left">
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
-                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Your Name</span>
-            </h1>
-            <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
-                Software Developer passionate about building high-performance web applications, desktop software, and cross-platform solutions.
-            </p>
-            <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                <a href="#projects" class="px-6 py-3 rounded-full bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition shadow-lg shadow-sky-400/20">
-                    View Projects
-                </a>
-                <a href="#contact" class="px-6 py-3 rounded-full border border-slate-700 hover:border-slate-500 transition font-semibold">
-                    Get in Touch
-                </a>
-            </div>
-        </div>
-
-        <!-- Cover Image Card -->
-        <div class="relative group">
-            <div class="absolute -inset-1 bg-gradient-to-r from-sky-400 to-blue-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
-            <div class="relative overflow-hidden rounded-2xl border border-slate-700/60 bg-slate-800 shadow-2xl">
-                <img src="cover.png" alt="Developer Cover" class="w-full h-80 sm:h-96 object-cover hover:scale-105 transition duration-500">
-            </div>
-        </div>
-
-    </div>
-</section>
-
-    <!-- About Section -->
-<section id="about" class="py-20 px-6 bg-slate-800/40 border-y border-slate-800">
-    <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-6 border-b border-slate-700/60 pb-3">About Me</h2>
-        
-        <!-- Bio Text -->
-        <p class="text-slate-300 leading-relaxed mb-6 text-base sm:text-lg">
-            Hi! I am a passionate Developer focused on creating practical software, desktop applications, and cross-platform mobile tools. I enjoy building efficient billing software, utility apps, and modern web interfaces using modern technologies.
-        </p>
-
-        <!-- What I Do Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700/40">
-                <h3 class="font-semibold text-sky-300 mb-1">📱 Mobile & App Development</h3>
-                <p class="text-xs text-slate-400">Building cross-platform apps using Flutter & Dart for Android and Desktop.</p>
-            </div>
-            <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700/40">
-                <h3 class="font-semibold text-sky-300 mb-1">💻 Software & Automation</h3>
-                <p class="text-xs text-slate-400">Creating desktop billing tools, Excel integrations, and Python automation scripts.</p>
-            </div>
-        </div>
-
-        <!-- Skills Tags -->
-        <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Skills & Technologies</h3>
-        <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">Flutter / Dart</span>
-            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">Python</span>
-            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">HTML5 / Tailwind CSS</span>
-            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">JavaScript</span>
-            <span class="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-medium text-sky-300">Git & GitHub</span>
-        </div>
-    </div>
-</section>
-
-    <!-- Featured Projects Section -->
-    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-10 border-b border-slate-800 pb-3">Featured Projects</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project Card 1 -->
-            <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/50 hover:border-sky-400/50 transition duration-300 hover:-translate-y-2 shadow-xl">
-                <h3 class="text-xl font-bold mb-2 text-slate-100">Mobile Sales App</h3>
-                <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                    Cross-platform application built for daily sales tracking, record exports, and management.
+        <!-- Hero Section -->
+        <section class="min-h-[60vh] flex items-center justify-center px-6 text-center">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Developer</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-400 mb-8 leading-relaxed">
+                    Software Developer passionate about building high-performance web applications, desktop software, and cross-platform solutions.
                 </p>
-                <div class="flex gap-2">
-                    <span class="text-xs font-medium text-sky-400 bg-sky-400/10 px-2.5 py-1 rounded">Flutter</span>
-                    <span class="text-xs font-medium text-sky-400 bg-sky-400/10 px-2.5 py-1 rounded">Dart</span>
+                <div class="flex justify-center gap-4">
+                    <a href="#contact" class="px-6 py-3 rounded-full bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition shadow-lg shadow-sky-400/20">
+                        Get in Touch
+                    </a>
                 </div>
             </div>
-            <!-- Featured Projects Section -->
-<section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
-    <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-10 border-b border-slate-800 pb-3">Featured Projects</h2>
-    
-    <!-- Projects Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-        <!-- Project Card 1, 2, 3 ... -->
-    </div>
+        </section>
 
-    <!-- ⬇️ ഈ ഡൗൺലോഡ് കോഡ് ഇവിടെ ചേർക്കുക ⬇️ -->
-    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700/60 max-w-md mx-auto my-6 text-center">
-        <h3 class="text-xl font-bold text-slate-100 mb-2">Download Android App (APK)</h3>
-        <p class="text-xs text-amber-400 mb-4">🔒 Protected File: Requires password to extract after download.</p>
-        
-        <a href="app-release.zip" download class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-sky-400 text-slate-900 font-bold rounded-xl hover:bg-sky-300 transition w-full shadow-lg shadow-sky-400/20">
-            <span>Download Protected Zip</span>
-        </a>
-    </div>
+        <!-- Services / Focus Areas Section -->
+        <section class="py-12 px-6 max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Mobile & App Development Card -->
+                <div class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700/60 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl mb-3">📱</div>
+                        <h3 class="text-xl font-bold text-sky-300 mb-2">Mobile & App Development</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Building cross-platform apps using Flutter & Dart for Android and Desktop.
+                        </p>
+                    </div>
+                </div>
 
-</section>
+                <!-- Software & Automation Card -->
+                <div class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700/60 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="text-3xl mb-3">💻</div>
+                        <h3 class="text-xl font-bold text-sky-300 mb-2">Software & Automation</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Creating desktop billing tools, Excel integrations, and Python automation scripts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!-- Project Card 2 -->
-            <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/50 hover:border-sky-400/50 transition duration-300 hover:-translate-y-2 shadow-xl">
-                <h3 class="text-xl font-bold mb-2 text-slate-100">Multi-Company Billing</h3>
-                <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                    Desktop software to manage company-specific billing data and excel report generation.
+        <!-- WhatsApp Contact Form Section -->
+        <section id="contact" class="py-16 px-6 bg-slate-800/30 border-y border-slate-800/60 my-12">
+            <div class="max-w-xl mx-auto">
+                <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-2 text-center">Chat on WhatsApp</h2>
+                <p class="text-slate-400 mb-8 text-center text-sm">Fill out the form below to send a direct message on WhatsApp!</p>
+                
+                <form id="whatsappForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Your Name</label>
+                        <input type="text" id="name" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-sky-400 text-slate-100 placeholder-slate-500" placeholder="Enter your name">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Subject / Requirement</label>
+                        <input type="text" id="subject" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-sky-400 text-slate-100 placeholder-slate-500" placeholder="Project inquiry, guidance, etc.">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+                        <textarea id="message" rows="4" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-sky-400 text-slate-100 placeholder-slate-500" placeholder="Write your message..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-3 bg-emerald-500 text-slate-950 font-bold rounded-lg hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20 flex justify-center items-center gap-2">
+                        Send via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- About Me Section (Placed at the bottom) -->
+        <section id="about" class="py-12 px-6 max-w-4xl mx-auto">
+            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-8">
+                <h2 class="text-2xl font-bold text-sky-400 mb-4 border-b border-slate-700/60 pb-2">About Me</h2>
+                <p class="text-slate-300 leading-relaxed text-base">
+                    Hi! I am a passionate Developer focused on creating practical software, desktop applications, and cross-platform mobile tools. I enjoy building efficient billing software, utility apps, and modern web interfaces using modern technologies.
                 </p>
-                <div class="flex gap-2">
-                    <span class="text-xs font-medium text-sky-400 bg-sky-400/10 px-2.5 py-1 rounded">Python</span>
-                    <span class="text-xs font-medium text-sky-400 bg-sky-400/10 px-2.5 py-1 rounded">Tkinter</span>
-                </div>
             </div>
+        </section>
 
-            <!-- Project Card 3 -->
-            <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/50 hover:border-sky-400/50 transition duration-300 hover:-translate-y-2 shadow-xl">
-                <h3 class="text-xl font-bold mb-2 text-slate-100">Computer Vision Security</h3>
-                <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                    Automated motion detection system with alert integration and automated photo updates.
-                </p>
-                <div class="flex gap-2">
-                    <span class="text-xs font-medium text-sky-400 bg-sky-400/10 px-2.5 py-1 rounded">OpenCV</span>
-                    <span class="text-xs font-medium text-sky-400 bg-sky-400/10 px-2.5 py-1 rounded">Python</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Image Gallery Section -->
-    <section id="gallery" class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-2 border-b border-slate-800 pb-3">Project Showcase & Gallery</h2>
-        <p class="text-slate-400 mb-8">Take a look at some of my featured project screenshots and designs.</p>
-
-        <!-- Grid Container -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            
-            <!-- Gallery Card 1 -->
-            <div class="group relative overflow-hidden rounded-2xl bg-slate-800 border border-slate-700/50 shadow-lg">
-                <img src="app_logo.png" alt="app_logo Screenshot" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                    <h3 class="text-lg font-bold text-slate-100">Mobile Sales App</h3>
-                    <p class="text-xs text-sky-400 font-medium mt-1">Flutter & UI Design</p>
-                </div>
-            </div>
-
-            <!-- Gallery Card 2 -->
-            <div class="group relative overflow-hidden rounded-2xl bg-slate-800 border border-slate-700/50 shadow-lg">
-                <img src="https://via.placeholder.com/600x400/1e293b/38bdf8?text=Billing+Software" alt="Project 2" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                    <h3 class="text-lg font-bold text-slate-100">Multi-Company Billing</h3>
-                    <p class="text-xs text-sky-400 font-medium mt-1">Python Desktop Software</p>
-                </div>
-            </div>
-
-            <!-- Gallery Card 3 -->
-            <div class="group relative overflow-hidden rounded-2xl bg-slate-800 border border-slate-700/50 shadow-lg">
-                <img src="https://via.placeholder.com/600x400/1e293b/38bdf8?text=Automation+Tools" alt="Project 3" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                    <h3 class="text-lg font-bold text-slate-100">Automation & Hardware</h3>
-                    <p class="text-xs text-sky-400 font-medium mt-1">Computer Vision & Arduino</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- WhatsApp Contact Form Section -->
-    <section id="contact" class="py-20 px-6 bg-slate-800/30">
-        <div class="max-w-xl mx-auto">
-            <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-4 text-center">Chat on WhatsApp</h2>
-            <p class="text-slate-400 mb-8 text-center">Fill out the form below to send a direct message on WhatsApp!</p>
-            
-            <form id="whatsappForm" class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-slate-300 mb-1">yasir</label>
-                    <input type="text" id="name" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-sky-400 text-slate-100 placeholder-slate-500" placeholder="Enter your name">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-slate-300 mb-1">Subject / Requirement</label>
-                    <input type="text" id="subject" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-sky-400 text-slate-100 placeholder-slate-500" placeholder="Project inquiry, guidance, etc.">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
-                    <textarea id="message" rows="4" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-sky-400 text-slate-100 placeholder-slate-500" placeholder="Write your message..."></textarea>
-                </div>
-
-                <button type="submit" class="w-full py-3 bg-emerald-500 text-slate-950 font-bold rounded-lg hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20 flex justify-center items-center gap-2">
-                    Send via WhatsApp
-                </button>
-            </form>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-6 border-t border-slate-800 text-center text-slate-500 text-sm">
-        <p>&copy; 2026 Developer Portfolio. Built with Tailwind CSS.</p>
+        <p>&copy; 2026 yssk.dev. Built with Tailwind CSS.</p>
     </footer>
 
     <!-- JavaScript for WhatsApp Integration -->
@@ -247,24 +128,19 @@
         document.getElementById('whatsappForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // 1. Enter your WhatsApp number with country code (Without + sign)
-            const phoneNumber = "919846027738"; 
+            // Replace with your WhatsApp number (with country code, no +)
+            const phoneNumber = "91XXXXXXXXXX"; 
 
-            // 2. Get Form Input Values
             const name = document.getElementById('name').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
 
-            // 3. Construct WhatsApp Message Body
             const fullMessage = `*New Website Inquiry*%0A%0A` +
                                 `*Name:* ${encodeURIComponent(name)}%0A` +
                                 `*Subject:* ${encodeURIComponent(subject)}%0A` +
                                 `*Message:* ${encodeURIComponent(message)}`;
 
-            // 4. Construct WhatsApp API URL
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
-
-            // 5. Open WhatsApp in a new tab
             window.open(whatsappUrl, '_blank');
         });
     </script>
