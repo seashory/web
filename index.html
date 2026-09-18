@@ -199,12 +199,12 @@
         </div>
     </div>
 
-    <!-- 🌟 Pop-up Window 2: Detailed App View Window (Notes & Download Page) 🌟 -->
-    <div id="expenseAppDetailModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-8">
+    <!-- 🌟 Pop-up Window 2: Detailed App View Window (Updated Scrolling Fix) 🌟 -->
+    <div id="expenseAppDetailModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-start sm:items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-auto max-h-[90vh] overflow-y-auto">
             
             <!-- Close Button -->
-            <button onclick="closeDetailModal('expenseApp')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold p-1">
+            <button onclick="closeDetailModal('expenseApp')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold p-1 z-10">
                 ✕
             </button>
 
@@ -236,7 +236,6 @@
                         ഓരോ മാസത്തെയും ചെലവുകൾ തരം തിരിച്ച് നിങ്ങൾക്ക് സേവ് ചെയ്യാൻ പറ്റും,ഒരു pdf ഫയൽ ആയി നിങ്ങളുടെ ഫോണിൽ സേവ് ചെയ്യാൻ സാധിക്കും.
                         ഈ ആപ്ലിക്കേഷന് ഇൻ്റർനെറ്റ് പെർമിഷൻ ആവശ്യമില്ലാത്തതുകൊണ്ട് ഡാറ്റ സേഫ് ആയിരിക്കും.
                         സോഫ്റ്റ്‌വെയർ നിർമ്മിച്ചിരിക്കുന്നത് പൂർണമായും മൈക്രോസോഫ്റ്റ് ൻ്റെയും ഗൂഗിൾ ൻ്റെയും ഔദ്യോഗിക ടോളുകൾ ഉപയോഗിച്ചാണ്.
-                        സോഫ്റ്റ്‌വെയർ ഓപ്പൺ ചെയ്യാനായി 1234 എന്ന പാസ്സ്‌വേർഡ് നൽകുക.
                     </p>
                 </div>
 
@@ -323,7 +322,7 @@
         }
 
         // Close Detail Modal Window
-        function closeDetailModal(appId) {
+        closeDetailModal = function(appId) {
             if(appId === 'expenseApp') {
                 document.getElementById('expenseAppDetailModal').classList.add('hidden');
             }
