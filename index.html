@@ -1,425 +1,62 @@
-<!DOCTYPE html>
-<html lang="ml" class="scroll-smooth">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGMRWTNM9W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-LGMRWTNM9W');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yassk.sfwr.developer - Portfolio</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
-</head>
-<body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col justify-between">
-
-    <!-- Navigation Bar -->
-    <nav class="fixed top-0 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Brand Logo -->
-            <a href="#" class="text-xl font-bold text-sky-400 tracking-wide">
-                yassk<span class="text-slate-100">.dev</span>
-            </a>
-
-            <!-- Navigation Links -->
-            <div class="flex space-x-6 text-sm font-medium">
-                <a href="#about" class="hover:text-sky-400 transition">About</a>
-                <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
-                <a href="#feedback" class="hover:text-sky-400 transition">Feedback</a>
-            </div>
+<!-- 🌟 NEW: Live Stats & Tech Stack Showcase Section 🌟 -->
+<section class="py-12 px-6 max-w-5xl mx-auto">
+    <!-- Live Stats Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div class="p-4 bg-slate-800/60 border border-slate-700/80 rounded-2xl text-center shadow-lg">
+            <h4 class="text-3xl font-extrabold text-sky-400 mb-1">100%</h4>
+            <p class="text-xs text-slate-400">Offline & Private</p>
         </div>
-    </nav>
+        <div class="p-4 bg-slate-800/60 border border-slate-700/80 rounded-2xl text-center shadow-lg">
+            <h4 class="text-3xl font-extrabold text-emerald-400 mb-1">Fast</h4>
+            <p class="text-xs text-slate-400">Lightweight Apps</p>
+        </div>
+        <div class="p-4 bg-slate-800/60 border border-slate-700/80 rounded-2xl text-center shadow-lg">
+            <h4 class="text-3xl font-extrabold text-amber-400 mb-1">Custom</h4>
+            <p class="text-xs text-slate-400">Software Build</p>
+        </div>
+        <div class="p-4 bg-slate-800/60 border border-slate-700/80 rounded-2xl text-center shadow-lg">
+            <h4 class="text-3xl font-extrabold text-indigo-400 mb-1">24/7</h4>
+            <p class="text-xs text-slate-400">Support via Chat</p>
+        </div>
+    </div>
 
-    <!-- Main Content Area -->
-    <main class="pt-24 pb-12">
+    <!-- Tech Stack Badges Showcase -->
+    <div class="bg-gradient-to-r from-slate-800/80 via-slate-800/40 to-slate-800/80 border border-slate-700/60 rounded-2xl p-6 text-center">
+        <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-4">Powered by Modern Technologies</h3>
+        <div class="flex flex-wrap justify-center items-center gap-3">
+            <span class="px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-full text-xs font-medium text-sky-300">🐍 Python</span>
+            <span class="px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-full text-xs font-medium text-blue-300">💙 Flutter</span>
+            <span class="px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-full text-xs font-medium text-cyan-300">🎨 Tailwind CSS</span>
+            <span class="px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-full text-xs font-medium text-emerald-300">🤖 Android Studio</span>
+            <span class="px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-full text-xs font-medium text-teal-300">⚡ Arduino</span>
+        </div>
+    </div>
+</section>
+
+<!-- 🌟 NEW: Interactive FAQ Section 🌟 -->
+<section class="py-12 px-6 max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold text-sky-400 mb-6 text-center">Frequently Asked Questions</h2>
+    <div class="space-y-4">
         
-        <!-- Hero Section -->
-        <section class="min-h-[45vh] flex items-center justify-center px-6 text-center">
-            <div class="max-w-3xl">
-                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
-                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Developer</span>
-                </h1>
-                
-                <!-- 🌟 മലയാളം മെസ്സേജ് 🌟 -->
-                <p class="text-base sm:text-lg text-emerald-400 bg-slate-800/80 border border-slate-700 p-4 rounded-xl mb-8 leading-relaxed shadow-lg">
-                   ഈ ഒരു പേജിൽ നിങ്ങൾക്ക് ലഭിക്കുന്നത് വളരെ ഉപകരതമായ ആൻഡ്രോയിഡ് സോഫ്റ്റ്‌വെയറുകൾ ആയിരിക്കും.
-                   നിങ്ങൾ ഞങ്ങളുമായിട്ട് കോൺടാക്ട് ചെയ്യുകയാണെങ്കിൽ,നിങ്ങളുടെ ആവശ്യാനുസരണമുള്ള ആൻഡ്രോയിഡ് സോഫ്റ്റ്‌വെയറുകൾ
-                    നിർമ്മിച്ച് നൽകുന്നതായിരിക്കും,നന്ദി.
-                </p>
+        <details class="bg-slate-800/50 border border-slate-700/70 rounded-xl p-4 group [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-medium cursor-pointer text-slate-200 text-sm">
+                <span>🔒 ഈ ആപ്പുകളിൽ എൻ്റെ ഡാറ്റ സുരക്ഷിതമാണോ?</span>
+                <span class="transition group-open:rotate-180">🔽</span>
+            </summary>
+            <p class="mt-3 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-700/50 pt-3">
+                അതെ, പൂർണ്ണമായും സുരക്ഷിതമാണ്. നമ്മുടെ ആപ്പുകൾ ഇൻ്റർനെറ്റ് പെർമിഷൻ ഇല്ലാതെ പ്രവർത്തിക്കുന്നവയാണ്. നിങ്ങളുടെ എല്ലാ ഡാറ്റയും നിങ്ങളുടെ ഫോണിൽ തന്നെ ഭദ്രമായിരിക്കും.
+            </p>
+        </details>
 
-                <div class="flex justify-center gap-4 flex-wrap">
-                    <a href="#contact" class="px-6 py-3 rounded-full bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition shadow-lg shadow-sky-400/20">
-                        Get in Touch
-                    </a>
-                    <a href="#feedback" class="px-6 py-3 rounded-full bg-slate-800 border border-slate-700 text-slate-100 font-semibold hover:bg-slate-700 transition">
-                        Give Feedback
-                    </a>
-                </div>
-            </div>
-        </section>
+        <details class="bg-slate-800/50 border border-slate-700/70 rounded-xl p-4 group [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-medium cursor-pointer text-slate-200 text-sm">
+                <span>🛠️ എനിക്ക് ആവശ്യമായ രീതിയിൽ പുതിയ സോഫ്റ്റ്‌വെയർ നിർമ്മിച്ചു നൽകുമോ?</span>
+                <span class="transition group-open:rotate-180">🔽</span>
+            </summary>
+            <p class="mt-3 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-700/50 pt-3">
+                തീർച്ചയായും! നിങ്ങളുടെ ബിസിനസ്സിനോ വ്യക്തിഗത ആവശ്യങ്ങൾക്കോ അനുയോജ്യമായ ആൻഡ്രോയിഡ് ആപ്പുകളും ഡെസ്ക്ടോപ്പ് സോഫ്റ്റ്‌വെയറുകളും നിർമ്മിച്ച് നൽകുന്നതാണ്. വാട്ട്‌സ്ആപ്പ് വഴി ബന്ധപ്പെടാവുന്നതാണ്.
+            </p>
+        </details>
 
-        <!-- Services / Clickable Cards Section -->
-        <section class="py-12 px-6 max-w-4xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                <!-- 1. Mobile & App Development Card -->
-                <div onclick="openAppModal()" class="p-6 bg-slate-800/80 hover:bg-slate-800 rounded-2xl border border-slate-700/60 hover:border-sky-400/50 shadow-xl flex flex-col justify-between cursor-pointer transition group">
-                    <div>
-                        <div class="text-3xl mb-3 group-hover:scale-110 transition duration-300">📱</div>
-                        <h3 class="text-xl font-bold text-sky-300 mb-2 flex items-center justify-between">
-                            Mobile Applications
-                            <span class="text-xs font-normal text-sky-400 bg-sky-400/10 px-2 py-0.5 rounded-full">Explore Apps</span>
-                        </h3>
-                        <p class="text-sm text-slate-400 leading-relaxed">
-                            Cross-platform Android applications. Click here to browse applications, details, and downloads.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 2. Software & Automation Card -->
-                <div class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700/60 shadow-xl flex flex-col justify-between">
-                    <div>
-                        <div class="text-3xl mb-3">💻</div>
-                        <h3 class="text-xl font-bold text-sky-300 mb-2">Software & Automation</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed">
-                            Creating desktop billing tools, Excel integrations, and Python automation scripts.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- WhatsApp Contact Form Section -->
-        <section id="contact" class="py-16 px-6 bg-slate-800/30 border-y border-slate-800/60 my-12">
-            <div class="max-w-xl mx-auto">
-                <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-2 text-center">Chat on WhatsApp</h2>
-                <p class="text-slate-400 mb-8 text-center text-sm">Fill out the form below to send a direct message on WhatsApp!</p>
-                
-                <form id="whatsappForm" class="space-y-4">
-                    <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-1">Your Name</label>
-                        <input type="text" id="name" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-sky-400 text-slate-100 placeholder-slate-500" placeholder="Enter your name">
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-1">Subject / Requirement</label>
-                        <input type="text" id="subject" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-sky-400 text-slate-100 placeholder-slate-500" placeholder="Project inquiry, guidance, etc.">
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
-                        <textarea id="message" rows="4" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-sky-400 text-slate-100 placeholder-slate-500" placeholder="Write your message..."></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full py-3 bg-emerald-500 text-slate-950 font-bold rounded-lg hover:bg-emerald-400 transition shadow-lg shadow-emerald-500/20 flex justify-center items-center gap-2">
-                        Send via WhatsApp
-                    </button>
-                </form>
-            </div>
-        </section>
-
-        <!-- 🌟 Google Form Feedback Section 🌟 -->
-        <section id="feedback" class="py-16 px-6 bg-slate-800/40 border-b border-slate-800 my-12">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-2xl sm:text-3xl font-bold text-sky-400 mb-2">Website Feedback</h2>
-                <p class="text-slate-400 mb-8 text-sm sm:text-base">
-                    നിങ്ങളുടെ അഭിപ്രായങ്ങളും നിർദ്ദേശങ്ങളും താഴെയുള്ള ഗൂഗിൾ ഫോം വഴി എളുപ്പത്തിൽ രേഖപ്പെടുത്താവുന്നതാണ്.
-                </p>
-                
-                <!-- Google Form Frame Container -->
-                <div class="w-full bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-2xl p-2 sm:p-4">
-                    <iframe 
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSeeuExV1AtV93aAmxCW1nl-SVqk3Wo5YGfi7K95QgQZeyd6xQ/viewform?embedded=true" 
-                        width="100%" 
-                        height="700" 
-                        frameborder="0" 
-                        marginheight="0" 
-                        marginwidth="0"
-                        class="rounded-xl w-full">
-                        Loading…
-                    </iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Me Section -->
-        <section id="about" class="py-12 px-6 max-w-4xl mx-auto">
-            <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-8">
-                <h2 class="text-2xl font-bold text-sky-400 mb-4 border-b border-slate-700/60 pb-2">About Me</h2>
-                <p class="text-slate-300 leading-relaxed text-base">
-                    Hi! I am a passionate Developer focused on creating practical software, desktop applications, and cross-platform mobile tools. I enjoy building efficient billing software, utility apps, and modern web interfaces using modern technologies.
-                </p>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- 🌟 Pop-up Window 1: Mobile Applications List 🌟 -->
-    <div id="appModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-xl w-full p-6 relative shadow-2xl">
-            
-            <!-- Close Button -->
-            <button onclick="closeAppModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold p-1">
-                ✕
-            </button>
-
-            <!-- Modal Header -->
-            <h3 class="text-2xl font-bold text-sky-400 mb-1">Mobile Applications</h3>
-            <p class="text-xs text-slate-400 mb-6">Select an application below to view notes, features, and download options.</p>
-
-            <!-- App Item 1: Daily Expense Tracker -->
-            <div class="bg-slate-800/90 p-5 rounded-xl border border-slate-700 hover:border-sky-500/40 transition mb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <div>
-                    <div class="flex items-center gap-2 mb-1">
-                        <span class="text-xl">📊</span>
-                        <h4 class="font-bold text-slate-100 text-lg">Daily Expense Tracker</h4>
-                    </div>
-                    <p class="text-xs text-slate-400">Track daily income, expenses, and monthly financial summaries.</p>
-                </div>
-                <button onclick="openDetailModal('expenseApp')" class="w-full sm:w-auto px-4 py-2.5 bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs font-bold rounded-xl transition shrink-0">
-                    View Details & Notes →
-                </button>
-            </div>
-
-            <!-- Future Applications Space -->
-            <div class="p-4 rounded-xl border border-dashed border-slate-800 text-center">
-                <p class="text-xs text-slate-500">More applications will be added soon...</p>
-            </div>
-        </div>
     </div>
-
-    <!-- 🌟 Pop-up Window 2: Detailed App View Window 🌟 -->
-    <div id="expenseAppDetailModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-start sm:items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-auto max-h-[90vh] overflow-y-auto">
-            
-            <!-- Close Button -->
-            <button onclick="closeDetailModal('expenseApp')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold p-1 z-10">
-                ✕
-            </button>
-
-            <!-- Back Button to App List -->
-            <button onclick="backToAppList('expenseApp')" class="text-xs font-semibold text-sky-400 hover:text-sky-300 mb-4 inline-flex items-center gap-1 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">
-                ← Back to App List
-            </button>
-
-            <!-- Header Section -->
-            <div class="flex items-start gap-4 mb-6 border-b border-slate-800 pb-4">
-                <div class="w-16 h-16 bg-sky-500/10 border border-sky-400/30 rounded-2xl flex items-center justify-center text-3xl shrink-0">
-                    📊
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-100">Daily Expense Tracker</h2>
-                    <p class="text-xs text-sky-400 font-medium">Android Application (APK)</p>
-                </div>
-            </div>
-
-            <!-- Notes & Instructions Section -->
-            <div class="space-y-6 text-sm text-slate-300">
-                
-                <!-- Description -->
-                <div>
-                    <h3 class="text-base font-semibold text-sky-300 mb-2">📌 Description</h3>
-                    <p class="leading-relaxed text-slate-400 text-xs sm:text-sm">
-                        Daily Expense Tracker is a clean, lightweight personal finance application designed to help you log daily expenses, monitor your spending habits, and manage budgets efficiently right from your smartphone.
-                        ഈ ഒരു സോഫ്റ്റ്‌വെയർ ഉപയോഗിച്ച് നിങ്ങൾക്ക് ഓരോ ദിവസവും ഉള്ള ചെലവുകൾ വിഭാഗങ്ങൾ തരം തിരിച്ച് റെക്കോർഡ് ചെയ്യാൻ പറ്റും,
-                        ഓരോ മാസത്തെയും ചെലവുകൾ തരം തിരിച്ച് നിങ്ങൾക്ക് സേവ് ചെയ്യാൻ പറ്റും,ഒരു pdf ഫയൽ ആയി നിങ്ങളുടെ ഫോണിൽ സേവ് ചെയ്യാൻ സാധിക്കും.
-                        ഈ ആപ്ലിക്കേഷന് ഇൻ്റർനെറ്റ് പെർമിഷൻ ആവശ്യമില്ലാത്തതുകൊണ്ട് ഡാറ്റ സേഫ് ആയിരിക്കും.
-                        സോഫ്റ്റ്‌വെയർ നിർമ്മിച്ചിരിക്കുന്നത് പൂർണമായും മൈക്രോസോഫ്റ്റ് ൻ്റെയും ഗൂഗിൾ ൻ്റെയും ഔദ്യോഗിക ടോളുകൾ ഉപയോഗിച്ചാണ്.
-                    </p>
-                </div>
-
-                <!-- Key Features -->
-                <div>
-                    <h3 class="text-base font-semibold text-sky-300 mb-2">✨ Key Features</h3>
-                    <ul class="list-disc list-inside space-y-1 text-xs sm:text-sm text-slate-400">
-                        <li>Fast and simple daily expense entry</li>
-                        <li>Category-wise expense breakdown</li>
-                        <li>Offline storage – data remains on your device</li>
-                        <li>Export report summaries</li>
-                    </ul>
-                </div>
-
-                <!-- Installation & Usage Notes -->
-                <div class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl">
-                    <h3 class="text-sm font-semibold text-amber-400 mb-2 flex items-center gap-1.5">
-                        ⚠️ Important Installation Notes
-                    </h3>
-                    <ul class="list-disc list-inside space-y-1 text-xs text-amber-200/80">
-                        <li>Enable <strong>"Install from Unknown Sources"</strong> in your Android security settings before installing.</li>
-                        <li>This APK is verified and safe for installation.</li>
-                        <li>Requires Android version 6.0 (Marshmallow) or higher.</li>
-                        <li>If you want this software customized for you or for any inquiry, please contact WhatsApp: 9846027738.</li>
-                        <li>Created by Yasir, email: seashory@gmail.com</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Footer Action Bar (Download Options & Back Button) -->
-            <div class="mt-8 pt-6 border-t border-slate-800 flex flex-col gap-4">
-                
-                <h3 class="text-sm font-semibold text-slate-200">Select Version to Download:</h3>
-
-                <!-- Download Buttons Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <!-- 1. Standard / Old Version Download Link -->
-                    <a href="app-release.apk" download class="px-4 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs sm:text-sm rounded-xl transition border border-slate-700 text-center flex items-center justify-center gap-2">
-                        ⬇️ Download Standard Version
-                    </a>
-
-                    <!-- 2. Updated Version Download Link -->
-                    <a href="app-updated.apk" download class="px-4 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs sm:text-sm rounded-xl transition shadow-lg shadow-emerald-500/20 text-center flex items-center justify-center gap-2">
-                        🚀 Download Updated Version
-                    </a>
-                </div>
-
-                <!-- Back to Home Button -->
-                <div class="pt-2">
-                    <button onclick="closeDetailModal('expenseApp')" class="w-full py-2.5 bg-slate-900 hover:bg-slate-800 text-slate-400 font-medium text-xs rounded-xl transition border border-slate-800 text-center">
-                        🏠 Back to home
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!-- 🌟 Pop-up Window 3: Privacy Policy Modal 🌟 -->
-    <div id="privacyModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-start sm:items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-auto max-h-[90vh] overflow-y-auto">
-            
-            <!-- Close Button -->
-            <button onclick="closePrivacyModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold p-1 z-10">
-                ✕
-            </button>
-
-            <!-- Header -->
-            <div class="border-b border-slate-800 pb-4 mb-6">
-                <h2 class="text-2xl font-bold text-sky-400">Privacy Policy</h2>
-                <p class="text-xs text-slate-400 mt-1">Last updated: September 2026</p>
-            </div>
-
-            <!-- Content -->
-            <div class="space-y-4 text-sm text-slate-300 leading-relaxed">
-                <p>
-                    Your privacy is critically important to us. This Privacy Policy outlines how your information is handled across our website and mobile applications.
-                </p>
-
-                <h3 class="text-base font-semibold text-sky-300 mt-4">1. Information We Do Not Collect</h3>
-                <p class="text-slate-400 text-xs sm:text-sm">
-                    Our mobile applications (such as Daily Expense Tracker) operate completely <strong>offline</strong>. We do not store, collect, or transmit your personal data, transaction logs, or expense history to any external servers. All data remains exclusively on your personal device.
-                </p>
-                <h3 class="text-base font-semibold text-sky-300 mt-4">1. Information We Do Not Collect</h3>
-                <p class="text-slate-400 text-xs sm:text-sm">
-                   We have not included any code in our application that intentionally leaks data.Other malware might infiltrate your device and attack our app as well,The developer will not be held responsible for problems arising in this manner.
-                </p>
-
-                <h3 class="text-base font-semibold text-sky-300 mt-4">2. Website Analytics & Cookies</h3>
-                <p class="text-slate-400 text-xs sm:text-sm">
-                    We use Google Analytics (gtag.js) on this portfolio site to understand basic site traffic, visitor statistics, and usage performance. No sensitive personal data is recorded or sold.
-                </p>
-
-                <h3 class="text-base font-semibold text-sky-300 mt-4">3. Third-Party Services</h3>
-                <p class="text-slate-400 text-xs sm:text-sm">
-                    Forms on this site (such as WhatsApp inquiries or Feedback Google Forms) process information through their respective official services. We do not share your contact details with external third parties.
-                </p>
-
-                <h3 class="text-base font-semibold text-sky-300 mt-4">4. Contact Information</h3>
-                <p class="text-slate-400 text-xs sm:text-sm">
-                    If you have any questions or concerns regarding this Privacy Policy, feel free to reach out via email at <span class="text-sky-400">seashory@gmail.com</span> or WhatsApp at <span class="text-sky-400">+91 9846027738</span>.
-                </p>
-            </div>
-
-            <!-- Footer Action Bar -->
-            <div class="mt-8 pt-4 border-t border-slate-800 text-right">
-                <button onclick="closePrivacyModal()" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs rounded-xl transition border border-slate-700">
-                    Close
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="py-6 border-t border-slate-800 text-center text-slate-500 text-sm flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-        <p>&copy; 2026 yassk.developer. Built with Tailwind CSS.</p>
-        <span class="hidden sm:inline">•</span>
-        <button onclick="openPrivacyModal()" class="text-sky-400 hover:underline text-xs sm:text-sm">
-            Privacy Policy
-        </button>
-    </footer>
-
-    <!-- JavaScript Scripts -->
-    <script>
-        // Open Mobile Applications Main Modal
-        function openAppModal() {
-            document.getElementById('appModal').classList.remove('hidden');
-        }
-
-        // Close Main Modal
-        function closeAppModal() {
-            document.getElementById('appModal').classList.add('hidden');
-        }
-
-        // Open Specific App Detail Modal Window
-        function openDetailModal(appId) {
-            closeAppModal();
-            if(appId === 'expenseApp') {
-                document.getElementById('expenseAppDetailModal').classList.remove('hidden');
-            }
-        }
-
-        // Close Detail Modal Window
-        function closeDetailModal(appId) {
-            if(appId === 'expenseApp') {
-                document.getElementById('expenseAppDetailModal').classList.add('hidden');
-            }
-        }
-
-        // Back from Details to Apps List
-        function backToAppList(appId) {
-            closeDetailModal(appId);
-            openAppModal();
-        }
-
-        // Privacy Policy Modal Controls
-        function openPrivacyModal() {
-            document.getElementById('privacyModal').classList.remove('hidden');
-        }
-
-        function closePrivacyModal() {
-            document.getElementById('privacyModal').classList.add('hidden');
-        }
-
-        // WhatsApp Form Handler
-        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const phoneNumber = "919846027738"; 
-            const name = document.getElementById('name').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-
-            const fullMessage = `*New Website Inquiry*%0A%0A` +
-                                `*Name:* ${encodeURIComponent(name)}%0A` +
-                                `*Subject:* ${encodeURIComponent(subject)}%0A` +
-                                `*Message:* ${encodeURIComponent(message)}`;
-
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
-            window.open(whatsappUrl, '_blank');
-        });
-    </script>
-
-</body>
-</html>
+</section>
