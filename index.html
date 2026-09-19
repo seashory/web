@@ -199,7 +199,7 @@
         </div>
     </div>
 
-    <!-- 🌟 Pop-up Window 2: Detailed App View Window (Updated Scrolling Fix) 🌟 -->
+    <!-- 🌟 Pop-up Window 2: Detailed App View Window 🌟 -->
     <div id="expenseAppDetailModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-start sm:items-center justify-center p-4 overflow-y-auto">
         <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-auto max-h-[90vh] overflow-y-auto">
             
@@ -236,7 +236,6 @@
                         ഓരോ മാസത്തെയും ചെലവുകൾ തരം തിരിച്ച് നിങ്ങൾക്ക് സേവ് ചെയ്യാൻ പറ്റും,ഒരു pdf ഫയൽ ആയി നിങ്ങളുടെ ഫോണിൽ സേവ് ചെയ്യാൻ സാധിക്കും.
                         ഈ ആപ്ലിക്കേഷന് ഇൻ്റർനെറ്റ് പെർമിഷൻ ആവശ്യമില്ലാത്തതുകൊണ്ട് ഡാറ്റ സേഫ് ആയിരിക്കും.
                         സോഫ്റ്റ്‌വെയർ നിർമ്മിച്ചിരിക്കുന്നത് പൂർണമായും മൈക്രോസോഫ്റ്റ് ൻ്റെയും ഗൂഗിൾ ൻ്റെയും ഔദ്യോഗിക ടോളുകൾ ഉപയോഗിച്ചാണ്.
-                        സോഫ്റ്റ്‌വെയർ ഓപ്പൺ ചെയ്യാനായി 1234 എന്ന പാസ്സ്‌വേർഡ് നൽകുക.
                     </p>
                 </div>
 
@@ -297,9 +296,65 @@
         </div>
     </div>
 
+    <!-- 🌟 Pop-up Window 3: Privacy Policy Modal 🌟 -->
+    <div id="privacyModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-start sm:items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-auto max-h-[90vh] overflow-y-auto">
+            
+            <!-- Close Button -->
+            <button onclick="closePrivacyModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold p-1 z-10">
+                ✕
+            </button>
+
+            <!-- Header -->
+            <div class="border-b border-slate-800 pb-4 mb-6">
+                <h2 class="text-2xl font-bold text-sky-400">Privacy Policy</h2>
+                <p class="text-xs text-slate-400 mt-1">Last updated: September 2026</p>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-4 text-sm text-slate-300 leading-relaxed">
+                <p>
+                    Your privacy is critically important to us. This Privacy Policy outlines how your information is handled across our website and mobile applications.
+                </p>
+
+                <h3 class="text-base font-semibold text-sky-300 mt-4">1. Information We Do Not Collect</h3>
+                <p class="text-slate-400 text-xs sm:text-sm">
+                    Our mobile applications (such as Daily Expense Tracker) operate completely <strong>offline</strong>. We do not store, collect, or transmit your personal data, transaction logs, or expense history to any external servers. All data remains exclusively on your personal device.
+                </p>
+
+                <h3 class="text-base font-semibold text-sky-300 mt-4">2. Website Analytics & Cookies</h3>
+                <p class="text-slate-400 text-xs sm:text-sm">
+                    We use Google Analytics (gtag.js) on this portfolio site to understand basic site traffic, visitor statistics, and usage performance. No sensitive personal data is recorded or sold.
+                </p>
+
+                <h3 class="text-base font-semibold text-sky-300 mt-4">3. Third-Party Services</h3>
+                <p class="text-slate-400 text-xs sm:text-sm">
+                    Forms on this site (such as WhatsApp inquiries or Feedback Google Forms) process information through their respective official services. We do not share your contact details with external third parties.
+                </p>
+
+                <h3 class="text-base font-semibold text-sky-300 mt-4">4. Contact Information</h3>
+                <p class="text-slate-400 text-xs sm:text-sm">
+                    If you have any questions or concerns regarding this Privacy Policy, feel free to reach out via email at <span class="text-sky-400">seashory@gmail.com</span> or WhatsApp at <span class="text-sky-400">+91 9846027738</span>.
+                </p>
+            </div>
+
+            <!-- Footer Action Bar -->
+            <div class="mt-8 pt-4 border-t border-slate-800 text-right">
+                <button onclick="closePrivacyModal()" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs rounded-xl transition border border-slate-700">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Footer -->
-    <footer class="py-6 border-t border-slate-800 text-center text-slate-500 text-sm">
-        <p>&copy; 2026 yassk.developer. Built with Tailwind CSS.</p>
+    <footer class="py-6 border-t border-slate-800 text-center text-slate-500 text-sm flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+        <p>&copy; 2026 yssk.dev. Built with Tailwind CSS.</p>
+        <span class="hidden sm:inline">•</span>
+        <button onclick="openPrivacyModal()" class="text-sky-400 hover:underline text-xs sm:text-sm">
+            Privacy Policy
+        </button>
     </footer>
 
     <!-- JavaScript Scripts -->
@@ -323,7 +378,7 @@
         }
 
         // Close Detail Modal Window
-        closeDetailModal = function(appId) {
+        function closeDetailModal(appId) {
             if(appId === 'expenseApp') {
                 document.getElementById('expenseAppDetailModal').classList.add('hidden');
             }
@@ -333,6 +388,15 @@
         function backToAppList(appId) {
             closeDetailModal(appId);
             openAppModal();
+        }
+
+        // Privacy Policy Modal Controls
+        function openPrivacyModal() {
+            document.getElementById('privacyModal').classList.remove('hidden');
+        }
+
+        function closePrivacyModal() {
+            document.getElementById('privacyModal').classList.add('hidden');
         }
 
         // WhatsApp Form Handler
