@@ -253,6 +253,20 @@
                 </button>
             </div>
 
+            <!-- App Item 2: Cash Collection Management App -->
+            <div class="bg-slate-800/90 p-5 rounded-xl border border-slate-700 hover:border-sky-500/40 transition mb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-xl">💵</span>
+                        <h4 class="font-bold text-slate-100 text-lg">Collection App Money</h4>
+                    </div>
+                    <p class="text-xs text-slate-400">Manage payment statuses, transaction logs, and cash collection tracking.</p>
+                </div>
+                <button onclick="openDetailModal('collectionApp')" class="w-full sm:w-auto px-4 py-2.5 bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs font-bold rounded-xl transition shrink-0">
+                    View Details & Notes →
+                </button>
+            </div>
+
             <!-- Future Applications Space -->
             <div class="p-4 rounded-xl border border-dashed border-slate-800 text-center">
                 <p class="text-xs text-slate-500">More applications will be added soon...</p>
@@ -260,7 +274,7 @@
         </div>
     </div>
 
-    <!-- 🌟 Pop-up Window 2: Detailed App View Window 🌟 -->
+    <!-- 🌟 Pop-up Window 2: Detailed App View Window (Daily Expense Tracker) 🌟 -->
     <div id="expenseAppDetailModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-start sm:items-center justify-center p-4 overflow-y-auto">
         <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-auto max-h-[90vh] overflow-y-auto">
             
@@ -334,12 +348,9 @@
 
                 <!-- Download Buttons Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <!-- 1. Standard / Old Version Download Link -->
                     <a href="app-release.apk" download class="px-4 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs sm:text-sm rounded-xl transition border border-slate-700 text-center flex items-center justify-center gap-2">
                         ⬇️ Download Standard Version
                     </a>
-
-                    <!-- 2. Updated Version Download Link -->
                     <a href="app-updated.apk" download class="px-4 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs sm:text-sm rounded-xl transition shadow-lg shadow-emerald-500/20 text-center flex items-center justify-center gap-2">
                         🚀 Download Updated Version
                     </a>
@@ -357,7 +368,93 @@
         </div>
     </div>
 
-    <!-- 🌟 Pop-up Window 3: Privacy Policy Modal 🌟 -->
+    <!-- 🌟 Pop-up Window 3: Detailed App View Window (Cash Collection Management App) 🌟 -->
+    <div id="collectionAppDetailModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-start sm:items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-auto max-h-[90vh] overflow-y-auto">
+            
+            <!-- Close Button -->
+            <button onclick="closeDetailModal('collectionApp')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold p-1 z-10">
+                ✕
+            </button>
+
+            <!-- Back Button to App List -->
+            <button onclick="backToAppList('collectionApp')" class="text-xs font-semibold text-sky-400 hover:text-sky-300 mb-4 inline-flex items-center gap-1 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">
+                ← Back to App List
+            </button>
+
+            <!-- Header Section -->
+            <div class="flex items-start gap-4 mb-6 border-b border-slate-800 pb-4">
+                <div class="w-16 h-16 bg-sky-500/10 border border-sky-400/30 rounded-2xl flex items-center justify-center text-3xl shrink-0">
+                    💵
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-100">Collection App Money</h2>
+                    <p class="text-xs text-sky-400 font-medium">Android Application (Flutter APK)</p>
+                </div>
+            </div>
+
+            <!-- Notes & Instructions Section -->
+            <div class="space-y-6 text-sm text-slate-300">
+                
+                <!-- Description -->
+                <div>
+                    <h3 class="text-base font-semibold text-sky-300 mb-2">📌 Description</h3>
+                    <p class="leading-relaxed text-slate-400 text-xs sm:text-sm">
+                        നിങ്ങളുടെ സ്ഥാപനത്തിലെ അല്ലെങ്കിൽ ദിവസേനയുള്ള കളക്ഷനുകൾ എളുപ്പത്തിൽ ട്രാക്ക് ചെയ്യാനും റസിപ്റ്റുകൾ മാനേജ് ചെയ്യാനും സഹായിക്കുന്ന ഫ്ലട്ടർ (Flutter) ആപ്ലിക്കേഷനാണിത്. പേയ്‌മെന്റ് സ്റ്റാറ്റസുകൾ കൃത്യമായി അപ്‌ഡേറ്റ് ചെയ്യാനും ഹിസ്റ്ററി സൂക്ഷിക്കാനും സഹായിക്കുന്നു.
+                    </p>
+                </div>
+
+                <!-- Key Features -->
+                <div>
+                    <h3 class="text-base font-semibold text-sky-300 mb-2">✨ Key Features</h3>
+                    <ul class="list-disc list-inside space-y-1 text-xs sm:text-sm text-slate-400">
+                        <li>Payment status toggles (e.g., Paid, Not Received)</li>
+                        <li>Confirmation popups for secure entries</li>
+                        <li>Detailed transaction history logs</li>
+                        <li>Full English localization support</li>
+                        <li>Lightweight, smooth performance & splash branding</li>
+                    </ul>
+                </div>
+
+                <!-- Installation & Usage Notes -->
+                <div class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl">
+                    <h3 class="text-sm font-semibold text-amber-400 mb-2 flex items-center gap-1.5">
+                        ⚠️ Important Installation Notes
+                    </h3>
+                    <ul class="list-disc list-inside space-y-1 text-xs text-amber-200/80">
+                        <li>Enable <strong>"Install from Unknown Sources"</strong> in your Android security settings before installing.</li>
+                        <li>Safe and fast installation. Fully offline & secure.</li>
+                        <li>Requires Android version 6.0 or higher.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Action Bar (Download Options & Back Button) -->
+            <div class="mt-8 pt-6 border-t border-slate-800 flex flex-col gap-4">
+                
+                <h3 class="text-sm font-semibold text-slate-200">Download Application:</h3>
+
+                <!-- Download Button Grid -->
+                <div class="grid grid-cols-1 gap-3">
+                    <a href="collection-app.apk" download class="px-4 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs sm:text-sm rounded-xl transition shadow-lg shadow-emerald-500/20 text-center flex items-center justify-center gap-2">
+                        🚀 Download Collection App APK
+                    </a>
+                </div>
+
+                <!-- Back to Home Button -->
+                <div class="pt-2">
+                    <button onclick="closeDetailModal('collectionApp')" class="w-full py-2.5 bg-slate-900 hover:bg-slate-800 text-slate-400 font-medium text-xs rounded-xl transition border border-slate-800 text-center">
+                        🏠 Back to home
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 🌟 Pop-up Window 4: Privacy Policy Modal 🌟 -->
     <div id="privacyModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-start sm:items-center justify-center p-4 overflow-y-auto">
         <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-auto max-h-[90vh] overflow-y-auto">
             
@@ -380,9 +477,8 @@
 
                 <h3 class="text-base font-semibold text-sky-300 mt-4">1. Information We Do Not Collect</h3>
                 <p class="text-slate-400 text-xs sm:text-sm">
-                    Our mobile applications (such as Daily Expense Tracker) operate completely <strong>offline</strong>. We do not store, collect, or transmit your personal data, transaction logs, or expense history to any external servers. All data remains exclusively on your personal device.
-                     We have not included any code in our application that intentionally leaks data.Other malware might infiltrate your device and attack our app as well,The developer will not be held responsible for problems arising in this manner.
-
+                    Our mobile applications (such as Daily Expense Tracker and Collection App) operate completely <strong>offline</strong>. We do not store, collect, or transmit your personal data, transaction logs, or expense history to any external servers. All data remains exclusively on your personal device.
+                    We have not included any code in our application that intentionally leaks data. Other malware might infiltrate your device and attack our app as well, The developer will not be held responsible for problems arising in this manner.
                 </p>
 
                 <h3 class="text-base font-semibold text-sky-300 mt-4">2. Website Analytics & Cookies</h3>
@@ -437,6 +533,8 @@
             closeAppModal();
             if(appId === 'expenseApp') {
                 document.getElementById('expenseAppDetailModal').classList.remove('hidden');
+            } else if(appId === 'collectionApp') {
+                document.getElementById('collectionAppDetailModal').classList.remove('hidden');
             }
         }
 
@@ -444,6 +542,8 @@
         function closeDetailModal(appId) {
             if(appId === 'expenseApp') {
                 document.getElementById('expenseAppDetailModal').classList.add('hidden');
+            } else if(appId === 'collectionApp') {
+                document.getElementById('collectionAppDetailModal').classList.add('hidden');
             }
         }
 
