@@ -33,6 +33,7 @@
 
             <!-- Navigation Links -->
             <div class="flex space-x-6 text-sm font-medium">
+                <a href="#updates" class="hover:text-sky-400 transition">Updates</a>
                 <a href="#about" class="hover:text-sky-400 transition">About</a>
                 <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
                 <a href="#feedback" class="hover:text-sky-400 transition">Feedback</a>
@@ -44,7 +45,7 @@
     <main class="pt-24 pb-12">
         
         <!-- Hero Section -->
-        <section class="min-h-[45vh] flex items-center justify-center px-6 text-center">
+        <section class="min-h-[40vh] flex items-center justify-center px-6 text-center">
             <div class="max-w-3xl">
                 <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
                     Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Developer</span>
@@ -62,6 +63,39 @@
                     <a href="#feedback" class="px-6 py-3 rounded-full bg-slate-800 border border-slate-700 text-slate-100 font-semibold hover:bg-slate-700 transition">
                         Give Feedback
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 NEW: What's New / Latest Update Showcase Box (ഫ്രണ്ട് പേജ് വിൻഡോ) 🌟 -->
+        <section id="updates" class="py-6 px-6 max-w-4xl mx-auto">
+            <div class="relative bg-gradient-to-r from-sky-900/40 via-slate-800 to-indigo-900/40 border border-sky-500/40 rounded-3xl p-6 sm:p-8 shadow-2xl shadow-sky-500/10 overflow-hidden">
+                <!-- Glowing effect in background -->
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-sky-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <!-- Header Badge -->
+                <div class="flex items-center justify-between gap-2 mb-4">
+                    <span class="inline-flex items-center gap-1.5 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider animate-pulse">
+                        🚀 Latest Release / പുതിയ അപ്‌ഡേറ്റ്
+                    </span>
+                    <span class="text-xs text-slate-400 font-medium">September 2026</span>
+                </div>
+
+                <!-- Update Content -->
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                    <div class="space-y-2">
+                        <h3 class="text-2xl font-bold text-white tracking-tight flex items-center gap-2">
+                            <span>💵</span> Collection App Money
+                        </h3>
+                        <p class="text-sm text-slate-300 leading-relaxed max-w-xl">
+                            ദിവസേനയുള്ള ക്യാഷ് കളക്ഷനുകൾ, പേയ്‌മെന്റ് സ്റ്റാറ്റസുകൾ എന്നിവ വളരെ എളുപ്പത്തിൽ റെക്കോർഡ് ചെയ്യാനും ട്രാക്ക് ചെയ്യാനുമുള്ള പുതിയ ഫ്ലട്ടർ ആൻഡ്രോയിഡ് ആപ്ലിക്കേഷൻ ഇപ്പോൾ ലഭ്യമാണ്!
+                        </p>
+                    </div>
+
+                    <!-- Action Button -->
+                    <button onclick="openDetailModal('collectionApp')" class="w-full md:w-auto px-6 py-3.5 bg-sky-400 hover:bg-sky-300 text-slate-950 font-bold text-sm rounded-2xl transition shadow-lg shadow-sky-400/20 shrink-0 flex items-center justify-center gap-2">
+                        <span>📥</span> View & Download APK
+                    </button>
                 </div>
             </div>
         </section>
